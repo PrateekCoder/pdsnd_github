@@ -9,7 +9,7 @@ CITY_DATA = {'chicago': 'chicago.csv',
              'new york': 'new_york_city.csv',
              'washington': 'washington.csv'}
 
-
+#Text Function
 class text():
     def spin(self, string, num):
         self.clear = "\b"*(8 + len(string))
@@ -20,7 +20,7 @@ class text():
                 time.sleep(0.1)
                 print(self.clear, end='', flush=True)
 
-
+#Get Filters function
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -52,7 +52,7 @@ def get_filters():
     print('-'*78, '\n')
     return city, month, day
 
-
+#Loand Data Function
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day
@@ -98,7 +98,7 @@ def load_data(city, month, day):
 
     return df
 
-
+#Time Stats Function.
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
@@ -140,7 +140,7 @@ def time_stats(df):
         print("\nThis took %s seconds." % (time.time() - start_time))
         print('-'*78, '\n')
 
-
+#Station Stats Funtion.
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
@@ -198,7 +198,7 @@ def trip_duration_stats(df):
         print("\nThis took %s seconds." % (time.time() - start_time))
         print('-'*78, '\n')
 
-
+#User Stats Function.
 def user_stats(df):
     """Displays statistics on bikeshare users."""
 
@@ -213,13 +213,13 @@ def user_stats(df):
         print(' User type stats '.center(78, '-'))
         print(df['User Type'].value_counts())
         # print()
-    # Display counts of gender
+    # Display counts of genders.
     if 'Gender' in df.columns:
         print(' Gender stats '.center(78, '-'))
         df['Gender'].replace(np.nan, 'not disclosed', inplace=True)
         print(df['Gender'].value_counts(dropna=False))
         # print()
-    # Display earliest, most recent, and most common year of birth
+    # Display earliest, most recent, and most common year of births.
     if 'Birth Year' in df.columns:
         print(' Age stats '.center(78, '-'))
         print('Earliest Birth '
@@ -233,7 +233,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*78, '\n')
 
-
+#Main Funtion Is here.
 def main():
     while True:
         city, month, day = get_filters()
