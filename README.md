@@ -38,7 +38,7 @@ Analyzed the data related to bike share use in Chicago, New York City, and Washi
 * total travel time
 * average travel time
 
-###4. User info:
+### 4. User info:
 * counts of each user type
 * counts of each gender (only available for NYC and Chicago)
 * earliest, most recent, most common year of birth (only available for NYC and Chicago)
@@ -79,7 +79,7 @@ The project must meet all the requirements mentioned in the rubric for the submi
 
 #### **Suggestions to Make the Project Stand Out!**
 
-| Submission Phase, Reviewer Tips | 
+| Submission Phase, Reviewer Tips |
 | ------------ |
 | Change the structure of bikeshare.py to make the code more efficient or in better style. | |
 | Ask and answer additional questions about the data beyond the questions already provided. |  |
@@ -97,4 +97,5 @@ To complete this project, the following software requirements apply:
 * A terminal application (Terminal on Mac and Linux or Cygwin on Windows).
 
 ### Credits
-Thank You Udacity for providing Programming For Data Science With Python Nanodegree Program. It was very helpful.
+
+Thank You Udacity for providing Programming For Data Science With Python Nanodegree Program. It was very helpful. Also thanks to my family for supporting me with the financials for the course.
