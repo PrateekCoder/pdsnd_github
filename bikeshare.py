@@ -1,5 +1,7 @@
-import time
-import pandas as pd
+##Author: Prateek Gaurav
+##Project: Bikeshare Project
+##Nanodegree: Porgramming for Data Science with Python ND
+
 import numpy as np
 import json
 
