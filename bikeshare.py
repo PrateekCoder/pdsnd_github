@@ -233,7 +233,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*78, '\n')
 
-#Main Funtion.
+#Main Funtion Is here.
 def main():
     while True:
         city, month, day = get_filters()
