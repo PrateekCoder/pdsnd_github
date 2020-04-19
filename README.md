@@ -38,7 +38,7 @@ Analyzed the data related to bike share use in Chicago, New York City, and Washi
 * total travel time
 * average travel time
 
-###4. User info:
+### 4. User info:
 * counts of each user type
 * counts of each gender (only available for NYC and Chicago)
 * earliest, most recent, most common year of birth (only available for NYC and Chicago)
